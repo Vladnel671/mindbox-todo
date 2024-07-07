@@ -80,12 +80,12 @@ function App() {
           )}`}
         >
           <div
-            className={`flex overflow-y-auto p-5 overflow-x-hidden flex-col w-[600px] block-3 z-10 items-center rounded-md ${getColorClass(
+            className={`flex p-5 overflow-x-hidden flex-col w-[6w-[600px] h-[fit] p-500px] block-3 z-10 items-center rounded-md ${getColorClass(
               'block3'
             )}`}
           >
-            <div className="w-[600px] h-[400px] p-5">
-              <div className="p-4 flex flex-col justify-between">
+            <div className="w-[600px] h-[fit]">
+              <div className="flex flex-col justify-between">
                 <TodoInput
                   toggleAccordion={() => setAccordionOpen((prev) => !prev)}
                   addTodo={addTodo}

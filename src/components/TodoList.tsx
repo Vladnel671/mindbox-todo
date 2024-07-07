@@ -11,7 +11,7 @@ const TodoList: React.FC<TodoListProps> = ({ todos, toggleTodo }) => {
     )
   }
   return (
-    <ul className="overflow-y-auto">
+    <ul className="overflow-y-auto h-[250px]">
       {todos.map((todo) => (
         <TodoItem key={todo.id} todo={todo} toggleTodo={toggleTodo} />
       ))}

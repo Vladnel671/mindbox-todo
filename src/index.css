@@ -66,3 +66,7 @@ body {
 .rotate.open {
   transform: rotate(180deg);
 }
+
+.item-border:not(:last-child) {
+  border-bottom: 1px solid #e2e8f0;
+}

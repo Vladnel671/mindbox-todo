@@ -8,7 +8,7 @@ const TodoButtons: React.FC<TodoButtonsProps> = ({
   remainingTasks,
 }) => {
   return (
-    <div className="my-4 text-sm flex border-t flex-row items-center justify-between w-full">
+    <div className="text-sm flex border-t flex-row items-center justify-between w-full">
       <div className="">
         <span className="text-white">{remainingTasks} Items left</span>
       </div>

@@ -6,6 +6,7 @@ export interface Todo {
 
 export interface InputProps {
   addTodo: (text: string) => void
+  toggleAccordion: () => void
 }
 
 export interface TodoListProps {
@@ -19,10 +20,10 @@ export interface TodoItemProps {
 }
 
 export interface TodoButtonsProps {
-  filter: Filter;
-  setFilter: (filter: Filter) => void;
-  clearCompleted: () => void;
-  remainingTasks: number;
+  filter: Filter
+  setFilter: (filter: Filter) => void
+  clearCompleted: () => void
+  remainingTasks: number
 }
 
 export type Filter = 'all' | 'active' | 'completed'

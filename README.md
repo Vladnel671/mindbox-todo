@@ -31,28 +31,3 @@
     <li><code>tailwind.config.js</code> — конфигурация TailwindCSS</li>
     <li><code>.eslintrc.js</code> — конфигурация ESLint</li>
 </ul>
-
-<h2>Основные зависимости</h2>
-
-<h3>Зависимости</h3>
-<ul>
-    <li><code>react</code> — библиотека для создания пользовательских интерфейсов</li>
-    <li><code>react-dom</code> — библиотека для работы с виртуальным DOM</li>
-</ul>
-
-<h3>DevDependencies</h3>
-<ul>
-    <li><code>@babel/preset-env</code>, <code>@babel/preset-react</code>, <code>@babel/preset-typescript</code> — пресеты Babel для трансформации кода</li>
-    <li><code>@testing-library/jest-dom</code>, <code>@testing-library/react</code> — утилиты для тестирования компонентов React</li>
-    <li><code>@types/jest</code>, <code>@types/react</code>, <code>@types/react-dom</code> — типы для TypeScript</li>
-    <li><code>@typescript-eslint/eslint-plugin</code>, <code>@typescript-eslint/parser</code> — плагины ESLint для TypeScript</li>
-    <li><code>@vitejs/plugin-react-swc</code> — плагин Vite для поддержки React</li>
-    <li><code>autoprefixer</code>, <code>postcss</code>, <code>tailwindcss</code> — инструменты для работы с CSS</li>
-    <li><code>babel-jest</code>, <code>jest</code>, <code>jest-environment-jsdom</code>, <code>ts-jest</code> — инструменты для тестирования</li>
-    <li><code>eslint</code>, <code>eslint-plugin-react-hooks</code>, <code>eslint-plugin-react-refresh</code> — инструменты для линтинга</li>
-    <li><code>typescript</code> — язык программирования</li>
-    <li><code>vite</code> — сборщик проекта</li>
-</ul>
-
-<h2>Заключение</h2>
-<p>Этот проект является базовым примером приложения для управления задачами. Он демонстрирует использование современных технологий и инструментов для разработки веб-приложений.</p>

@@ -82,3 +82,11 @@ body {
 .third-block {
   @apply flex p-5 overflow-x-hidden flex-col h-[fit] items-center rounded-md z-30;
 }
+
+.todo-buttons-main-block {
+  @apply text-sm flex border-t flex-row items-center justify-between w-full;
+}
+
+.todo-item-main-block {
+  @apply flex items-center overflow-x-auto mb-2 item-border py-3;
+}

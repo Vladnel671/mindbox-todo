@@ -80,7 +80,7 @@ function App() {
           )}`}
         >
           <div
-            className={`flex p-5 overflow-x-hidden flex-col w-[6w-[600px] h-[fit] p-500px] block-3 z-10 items-center rounded-md ${getColorClass(
+            className={`flex p-5 overflow-x-hidden flex-col h-[fit] block-3 z-10 items-center rounded-md ${getColorClass(
               'block3'
             )}`}
           >

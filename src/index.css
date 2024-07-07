@@ -70,3 +70,15 @@ body {
 .item-border:not(:last-child) {
   border-bottom: 1px solid #e2e8f0;
 }
+
+.first-block {
+  @apply flex flex-col pb-1.5 w-[580px] z-10 items-center rounded-md;
+}
+
+.second-block {
+  @apply flex flex-col pb-2 w-[590px] z-20 items-center rounded-md;
+}
+
+.third-block {
+  @apply flex p-5 overflow-x-hidden flex-col h-[fit] items-center rounded-md z-30;
+}

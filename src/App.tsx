@@ -45,23 +45,12 @@ function App() {
   return (
     <>
       <p className="text-pink-400 text-2xl p-5">Todos</p>
-      <div
-        className={`flex flex-col pb-1.5 w-[580px] z-8 block-1 items-center rounded-md ${getColorClass(
-          filter,
-          'block1'
-        )}`}
-      >
+      <div className={`first-block block-1 ${getColorClass(filter, 'block1')}`}>
         <div
-          className={`flex flex-col pb-2 w-[590px] block-2 z-9 items-center rounded-md ${getColorClass(
-            filter,
-            'block2'
-          )}`}
+          className={`second-block block-2 ${getColorClass(filter, 'block2')}`}
         >
           <div
-            className={`flex p-5 overflow-x-hidden flex-col h-[fit] block-3 z-10 items-center rounded-md ${getColorClass(
-              filter,
-              'block3'
-            )}`}
+            className={`third-block block-3 ${getColorClass(filter, 'block3')}`}
           >
             <div className="w-[600px] h-[fit]">
               <div className="flex flex-col justify-between">

@@ -5,6 +5,7 @@ import TodoInput from './components/TodoInput'
 import TodoList from './components/TodoList'
 import TodoButtons from './components/TodoButtons'
 import { initialTodos } from './constants'
+import { getColorClass } from './utils'
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>(initialTodos)
@@ -34,31 +35,6 @@ function App() {
 
   const remainingTasks = todos.filter((todo) => !todo.completed).length
 
-  const getColorClass = (type: string) => {
-    switch (type) {
-      case 'block1':
-        return filter === 'all'
-          ? 'bg-green-500'
-          : filter === 'active'
-          ? 'bg-purple-700'
-          : ' bg-blue-500'
-      case 'block2':
-        return filter === 'all'
-          ? 'bg-purple-700'
-          : filter === 'active'
-          ? 'bg-blue-500'
-          : 'bg-green-500'
-      case 'block3':
-        return filter === 'all'
-          ? 'bg-blue-500'
-          : filter === 'active'
-          ? 'bg-green-500'
-          : 'bg-purple-700'
-      default:
-        return ''
-    }
-  }
-
   const filteredTodos =
     filter === 'all'
       ? todos
@@ -71,16 +47,19 @@ function App() {
       <p className="text-pink-400 text-2xl p-5">Todos</p>
       <div
         className={`flex flex-col pb-1.5 w-[580px] z-8 block-1 items-center rounded-md ${getColorClass(
+          filter,
           'block1'
         )}`}
       >
         <div
           className={`flex flex-col pb-2 w-[590px] block-2 z-9 items-center rounded-md ${getColorClass(
+            filter,
             'block2'
           )}`}
         >
           <div
             className={`flex p-5 overflow-x-hidden flex-col h-[fit] block-3 z-10 items-center rounded-md ${getColorClass(
+              filter,
               'block3'
             )}`}
           >

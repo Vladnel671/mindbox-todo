@@ -20,14 +20,3 @@
 <h2>Тестирование</h2>
 <p>Проект использует Jest для написания и выполнения тестов. Для запуска тестов используйте команду:</p>
 <pre><code>npm test</code></pre>
-
-<h2>Структура проекта</h2>
-<p>Основные директории и файлы проекта:</p>
-<ul>
-    <li><code>src/</code> — директория с исходным кодом приложения</li>
-    <li><code>public/</code> — статические файлы и HTML-шаблон</li>
-    <li><code>package.json</code> — файл с конфигурацией проекта и списком зависимостей</li>
-    <li><code>vite.config.ts</code> — конфигурация сборщика Vite</li>
-    <li><code>tailwind.config.js</code> — конфигурация TailwindCSS</li>
-    <li><code>.eslintrc.js</code> — конфигурация ESLint</li>
-</ul>

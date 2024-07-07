@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './index.css'
 import { Filter, Todo } from './types'
 import TodoInput from './components/TodoInput'
@@ -59,16 +59,6 @@ function App() {
     }
   }
 
-  const block1ClassName = `flex flex-col pb-1.5 w-[580px] z-8 block-1 items-center rounded-md ${getColorClass(
-    'block1'
-  )}`
-  const block2ClassName = `flex flex-col pb-2 w-[590px] block-2 z-9 items-center rounded-md ${getColorClass(
-    'block2'
-  )}`
-  const block3ClassName = `flex overflow-y-auto p-5 overflow-x-hidden flex-col w-[600px] block-3 z-10 items-center rounded-md ${getColorClass(
-    'block3'
-  )}`
-
   const filteredTodos =
     filter === 'all'
       ? todos
@@ -79,14 +69,22 @@ function App() {
   return (
     <>
       <p className="text-pink-400 text-2xl p-5">Todos</p>
-      <div className={block1ClassName}>
-        <div className={block2ClassName}>
-          <div className={block3ClassName}>
-<<<<<<< HEAD
+      <div
+        className={`flex flex-col pb-1.5 w-[580px] z-8 block-1 items-center rounded-md ${getColorClass(
+          'block1'
+        )}`}
+      >
+        <div
+          className={`flex flex-col pb-2 w-[590px] block-2 z-9 items-center rounded-md ${getColorClass(
+            'block2'
+          )}`}
+        >
+          <div
+            className={`flex overflow-y-auto p-5 overflow-x-hidden flex-col w-[600px] block-3 z-10 items-center rounded-md ${getColorClass(
+              'block3'
+            )}`}
+          >
             <div className="w-[600px] h-[400px] p-5">
-=======
-            <div className="w-[600px] h-[400px]">
->>>>>>> 5baf937182c7db2ee575384c366d2e16c6487ac8
               <div className="p-4 flex flex-col justify-between">
                 <TodoInput
                   toggleAccordion={() => setAccordionOpen((prev) => !prev)}

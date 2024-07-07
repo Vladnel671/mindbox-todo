@@ -34,7 +34,7 @@ function App() {
 
   const remainingTasks = todos.filter((todo) => !todo.completed).length
 
-  function getColorClass(type: string) {
+  const getColorClass = (type: string) => {
     switch (type) {
       case 'block1':
         return filter === 'all'

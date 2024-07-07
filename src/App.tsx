@@ -65,7 +65,7 @@ function App() {
   const block2ClassName = `flex flex-col pb-2 w-[590px] block-2 z-9 items-center rounded-md ${getColorClass(
     'block2'
   )}`
-  const block3ClassName = `flex flex-col w-[600px] block-3 z-10 items-center rounded-md ${getColorClass(
+  const block3ClassName = `flex overflow-y-auto p-5 overflow-x-hidden flex-col w-[600px] block-3 z-10 items-center rounded-md ${getColorClass(
     'block3'
   )}`
 
@@ -82,8 +82,8 @@ function App() {
       <div className={block1ClassName}>
         <div className={block2ClassName}>
           <div className={block3ClassName}>
-            <div className="w-[600px] min-h-[400px]">
-              <div className="p-4 flex flex-col justify-between h-full">
+            <div className="w-[600px] h-[400px] p-5">
+              <div className="p-4 flex flex-col justify-between">
                 <TodoInput
                   toggleAccordion={() => setAccordionOpen((prev) => !prev)}
                   addTodo={addTodo}

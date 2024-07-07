@@ -3,7 +3,7 @@ import { TodoItemProps } from '../types'
 
 const TodoItem: React.FC<TodoItemProps> = ({ todo, toggleTodo }) => {
   return (
-    <li className="flex items-center overflow-x-auto mb-2 border-b py-3">
+    <li className="flex items-center overflow-x-auto mb-2 item-border py-3">
       <input
         type="checkbox"
         checked={todo.completed}

@@ -82,7 +82,11 @@ function App() {
       <div className={block1ClassName}>
         <div className={block2ClassName}>
           <div className={block3ClassName}>
+<<<<<<< HEAD
             <div className="w-[600px] h-[400px] p-5">
+=======
+            <div className="w-[600px] h-[400px]">
+>>>>>>> 5baf937182c7db2ee575384c366d2e16c6487ac8
               <div className="p-4 flex flex-col justify-between">
                 <TodoInput
                   toggleAccordion={() => setAccordionOpen((prev) => !prev)}

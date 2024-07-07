@@ -10,7 +10,7 @@ const TodoButtons: React.FC<TodoButtonsProps> = ({
   return (
     <div className="my-4 text-sm flex border-t flex-row items-center justify-between w-full">
       <div className="">
-        <span className="text-gray-700">{remainingTasks} Items left</span>
+        <span className="text-white">{remainingTasks} Items left</span>
       </div>
       <button
         className={`mr-2 p-2 rounded ${
@@ -33,8 +33,8 @@ const TodoButtons: React.FC<TodoButtonsProps> = ({
       <button
         className={`p-2 rounded ${
           filter === 'completed'
-            ? 'bg-gray-700 text-white'
-            : 'bg-gray-500 text-white'
+            ? 'bg-purple-900 text-white'
+            : 'bg-purple-800 text-white'
         }`}
         onClick={() => setFilter('completed')}
       >

@@ -4,7 +4,7 @@ import TodoItem from './TodoItem'
 
 const TodoList: React.FC<TodoListProps> = ({ todos, toggleTodo }) => {
   if (todos.length === 0) {
-    return <p className="text-gray-500 text-center">Your list is empty.</p>
+    return <p className="text-white text-center">Your list is empty.</p>
   }
   return (
     <ul className="overflow-y-auto">
